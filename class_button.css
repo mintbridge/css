@@ -1,0 +1,157 @@
+/*
+Super Awesome Button Class
+==========================
+Cross browser button styles that degrade nicely for unsported browsers
+Adapted from http://www.zurb.com/playground/super-awesome-buttons
+
+Usage
+=====
+Add the .button class to the <a> or <button> element, the choose your options
+Options:
+	- size (.small, .medium or .large) to set the size,
+	- color (.blue, .red, .green, .orange, .yellow, .magenta) to set the colour
+	- pulse (.pulse) adds a pulsing effect to supported browsers 
+	
+Examples
+========
+<a class="button small blue">Small Blue Button &raquo;</a>
+<a class="button medium red pulse">Medium Red Pulsing Button &raquo;</a>
+<a class="button large green">Large Green Button &raquo;</a>
+*/
+.button, .button:visited {
+	background: #222 url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAyCAYAAACd+7GKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAClJREFUeNpi/v//vwMTAwPDfzjBgMpFI/7hFSOT9Y8qRuF3JLoHAQIMAHYtMmRA+CugAAAAAElFTkSuQmCC") repeat-x; 
+	display: inline-block; 
+	padding: 5px 10px 6px; 
+	color: #fff; 
+	text-decoration: none;
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+	border-bottom: 1px solid rgba(0,0,0,0.25);
+	position: relative;
+	cursor: pointer;
+}
+.button:hover{ 
+	background-color: #111; 
+	color: #fff; 
+}
+.button:active	{ 
+	top: 1px; 
+}
+.button.small, .button.small:visited { 
+	font-size: 11px; 
+	padding: ; 
+}
+.button, .button:visited, .button.medium, .button.medium:visited { 
+	font-size: 13px; 
+	font-weight: bold; 
+	line-height: 1; 
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25); 
+}
+.button.large, .button.large:visited { 
+	font-size: 14px; 
+	padding: 8px 14px 9px; 
+}
+.button.pulse {
+	-webkit-animation-name: grey_pulse;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+}
+/* Gray */
+@-webkit-keyframes grey_pulse {
+	from { background-color: #333; -webkit-box-shadow: 0 0 9px #333; }
+	50% { background-color: #222; -webkit-box-shadow: 0 0 18px #222; }
+	to { background-color: #333; -webkit-box-shadow: 0 0 9px #333; }
+}
+/* Green */
+.button.green, .button.green:visited { 
+	background-color: #91bd09;
+}
+.button.green:hover { 
+	background-color: #749a02; 
+}
+.button.pulse.green {
+	-webkit-animation-name: green_pulse;	
+}
+@-webkit-keyframes green_pulse {
+	from { background-color: #749a02; -webkit-box-shadow: 0 0 9px #333; }
+	50% { background-color: #91bd09; -webkit-box-shadow: 0 0 18px #91bd09; }
+	to { background-color: #749a02; -webkit-box-shadow: 0 0 9px #333; }
+}
+/* Blue */
+.button.blue, .button.blue:visited { 
+	background-color: #2daebf; 
+}
+.button.blue:hover { 
+	background-color: #007d9a; 
+}
+.button.pulse.blue {
+	-webkit-animation-name: blue_pulse;	
+}
+@-webkit-keyframes blue_pulse {
+	from { background-color: #007d9a; -webkit-box-shadow: 0 0 9px #333; }
+	50% { background-color: #2daebf; -webkit-box-shadow: 0 0 18px #2daebf; }
+	to { background-color: #007d9a; -webkit-box-shadow: 0 0 9px #333; }
+}
+/* Red */
+.button.red, .button.red:visited { 
+	background-color: #e33100; 
+}
+.button.red:hover { 
+	background-color: #872300; 
+}
+.button.pulse.red {
+	-webkit-animation-name: red_pulse;	
+}
+@-webkit-keyframes red_pulse {
+	from { background-color: #bc330d; -webkit-box-shadow: 0 0 9px #333; }
+	50% { background-color: #e33100; -webkit-box-shadow: 0 0 18px #e33100; }
+	to { background-color: #bc330d; -webkit-box-shadow: 0 0 9px #333; }
+}
+/* Magenta */
+.button.magenta, .button.magenta:visited { 
+	background-color: #a9014b; 
+}
+.button.magenta:hover { 
+	background-color: #630030; 
+}
+.button.pulse.magenta {
+	-webkit-animation-name: magenta_pulse;	
+}
+@-webkit-keyframes magenta_pulse {
+	from { background-color: #630030; -webkit-box-shadow: 0 0 9px #333; }
+	50% { background-color: #a9014b; -webkit-box-shadow: 0 0 18px #a9014b; }
+	to { background-color: #630030; -webkit-box-shadow: 0 0 9px #333; }
+}
+/* Orange */
+.button.orange, .button.orange:visited { 
+	background-color: #ff5c00; 
+}
+.button.orange:hover { 
+	background-color: #d45500; 
+}
+.button.pulse.orange {
+	-webkit-animation-name: orange_pulse;	
+}
+@-webkit-keyframes orange_pulse {
+	from { background-color: #d45500; -webkit-box-shadow: 0 0 9px #333; }
+	50% { background-color: #ff5c00; -webkit-box-shadow: 0 0 18px #ff5c00; }
+	to { background-color: #d45500; -webkit-box-shadow: 0 0 9px #333; }
+}
+/* Yellow */
+.button.yellow, .button.yellow:visited { 
+	background-color: #ffb515; 
+}
+.button.yellow:hover { 
+	background-color: #fc9200; 
+}
+.button.pulse.yellow {
+	-webkit-animation-name: yellow_pulse;	
+}
+@-webkit-keyframes yellow_pulse {
+	from { background-color: #fc9200; -webkit-box-shadow: 0 0 9px #333; }
+	50% { background-color: #ffb515; -webkit-box-shadow: 0 0 18px #ffb515; }
+	to { background-color: #fc9200; -webkit-box-shadow: 0 0 9px #333; }
+}
