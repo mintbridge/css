@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Form Class examples</title>
+<link href="reset.css" rel="stylesheet" type="text/css" />
+<link href="class_form.css" rel="stylesheet" type="text/css" />
+<link href="class_button.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>Form Class examples</h1>
+
+<form class="form" name="form" method="post" action="#">
+    <fieldset>
+        <legend>Legend text</legend>
+        <p>This is a basic paragraph within the form</p>
+        <label>Name
+        <span class="hint">Add your name</span>
+        </label>
+        <input type="text" name="name" id="name" />
+        
+        <label>Email
+        <span class="hint">Add a valid address</span>
+        </label>
+        <input type="text" name="email" id="email" class="large" />
+        
+        <label>Password
+        <span class="hint">Min. size 6 chars</span>
+        </label>
+        <input type="text" name="password" id="password" />
+        <label for="comment">Comment
+        <span class="hint">An example textarea</span>
+        </label>
+        <textarea id="comment" name="comment" class="large"></textarea>
+    	<button type="submit" class="button">Sign-up</button>
+
+    </fieldset>
+    
+</form>
+
+</body>
+</html>

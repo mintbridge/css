@@ -1,0 +1,96 @@
+/*
+Form Element Class
+==========================
+Adapted from http://woork.blogspot.com/2008/06/clean-and-pure-css-form-design.html
+
+Usage
+=====
+	
+Examples
+========
+<div id="stylized" class="myform">
+<form id="form" name="form" method="post" action="index.html">
+<h1>Sign-up form</h1>
+<p>This is the basic look of my form without table</p>
+
+<label>Name
+<span class="small">Add your name</span>
+</label>
+<input type="text" name="name" id="name" />
+
+<label>Email
+<span class="small">Add a valid address</span>
+</label>
+<input type="text" name="email" id="email" />
+
+<label>Password
+<span class="small">Min. size 6 chars</span>
+</label>
+<input type="text" name="password" id="password" />
+
+<button type="submit">Sign-up</button>
+<div class="spacer"></div>
+
+</form>
+</div>
+*/
+.form {
+	border:solid 2px #b7ddf2;
+	background:#ebf4fb;
+}
+.form fieldset{
+	border:0px none;
+	border-bottom:1px solid #b7ddf2;
+	margin:1%;
+}
+.form legend {
+	display:block;
+	font-size:14pt;
+	font-weight:bold;
+	padding-bottom:1.5%;
+}
+.form label{
+	display:block;
+	font-weight:bold;
+	text-align:right;
+	font-size:11pt;
+	width:30%;
+	float:left;
+	padding-top:5px;
+	clear:left;
+}
+.form input, .form input.small, .form textarea, .form textarea.small{
+	float:left;
+	font-size:11pt;
+	padding:4px 2px;
+	border:solid 1px #aacfe4;
+	width:32%;
+	margin:2px 0 20px 10px;
+}
+.form input.large, .form textarea.large{
+	float:left;
+	font-size:11pt;
+	padding:4px 2px;
+	border:solid 1px #aacfe4;
+	width:64%;
+	margin:2px 0 20px 10px;
+}
+.form button{
+	display:block;
+	clear:left;
+}
+.form p{
+	font-size:11pt;
+	color:#666666;
+	margin-bottom:20px;
+	border-bottom:solid 1px #b7ddf2;
+	padding-bottom:10px;
+}
+.form .sub_label{
+	color:#666666;
+	display:block;
+	font-size:11px;
+	font-weight:normal;
+	text-align:right;
+	width:35%;
+}
